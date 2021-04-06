@@ -2,7 +2,6 @@
 - I am a student in the management information systems program.
 - I'm interested in coding and design
 - I’m currently learning python programming 
-- I’m looking to collaborate on ...
 - https://www.linkedin.com/in/selma-yaman-029a301b5/
 
 <!---
