@@ -4,33 +4,28 @@ Created on Fri Feb 12 13:20:47 2021
 
 @author: HP
 """
-print("""
-*************************
-Kullanıcı Giriş Programı
-*************************
-""")
 
-sys_kullanici_adi = "sselma"
+kullaniciAdi = "sselma"
 
-sys_parola = "12345"
-giris_hakki = 3
+parola = "12345"
+kalanGirisHakki = 3
 
 while True:
-    kullanici_adi = input("Kullanıcı Adı:")
+    isim = input("Kullanıcı Adı:")
     parola = input("Parola:")
-    if (kullanici_adi != sys_kullanici_adi and parola == sys_parola):
+    if (isim != kullaniciAdi and parola == parola):
         print("Kullanıcı adı Hatalı!")
-        giris_hakki -= 1
-    elif (kullanici_adi == sys_kullanici_adi and parola != sys_parola):
+        kalanGirisHakki -= 1
+    elif (isim == kullaniciAdi and parola != parola):
         print("Parola hatalı!")
-        giris_hakki -= 1
-    elif (kullanici_adi != sys_kullanici_adi and parola != sys_parola):
+        kalanGirisHakki -= 1
+    elif (isim != kullaniciAdi and parola != parola):
         print("Kullanıcı adı ve parola hatalı!")
-        giris_hakki -= 1
+        kalanGirisHakki -= 1
     else:
-        print("Sisteme başarı ile giriş yapıldı.")
+        print("Kullanıcı adı ve şifre doğrulandı. Sisteme giriş yaptınız.")
         break
-    if (giris_hakki == 0):
+    if (kalanGirisHakki == 0):
         print("Giriş hakkınız bitti...")
         break
     
